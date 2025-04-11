@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução</title>
+    <link rel="stylesheet" href="reset.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Novos lançamentos</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+         <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="books.img/ApacheKafka (1).svg" alt="Livro de ApacheKafka"></div>
+            <div class="swiper-slide"><img src="books.img/Gestão2 (1).svg" alt="Livro de GEstão"></div>
+            <div class="swiper-slide"><img src="books.img/Liderança (1).svg" alt="Livro de Liderança"></div>
+            <div class="swiper-slide"><img src="books.img/Portugol (1).svg" alt="Livro sobre Portugol"></div>
+            <div class="swiper-slide"><img src="books.img/Tuning (1).svg" alt="Livro sobre Tuning"></div>
+            </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    
+        </div>
+        <div class="card">
+            <div class="card__descricao">
+                <div class="descricao">
+                    <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+                    <h2 class="descricao__livro">Angular 11 e Firebase</h2>
+                    <p class="descricao__paragrafo">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                </div>
+                <img class="descricai__imagem" src="assets/Angular (1).svg" alt="Angular">     
+            </div>
+            <div class="card__botoes">
+                <ul class="card__lista">
+                    <li class="card__item">
+                        <img src="assets/Favoritos.svg" alt="Meus Favoritos">
+                        <a href="#"></a>
+                    </li>
+                    <li class="card__item">
+                        <img src="assets/Compras.svg" alt="Minhas Compras">
+                        <a href="#"></a>
+                    </li>
+                </ul>
+                <a class="botao__ancora" href="#">Saiba mais</a>
+        </div>
+    </section>
+    <section class="topicos">
+        <h2 class="topicos__titulo">Tópicos visitados recentemente</h2>
+        <ul class="topicos__lista">
+            <li class="topicos__item">
+                <a class="topicos__link" href="#">Android</a>
+            </li>
+            <li class="topicos__item">
+                <a class="topicos__link" href="#">Marketing Digital</a>
+            </li>
+            <li class="topicos__item">
+                <a class="topicos__link" href="#">Agile</a>
+            </li>
+            <li class="topicos__item">
+                <a class="topicos__link" href="#">Startups</a>
+            </li>
+            <li class="topicos__item">
+                <a class="topicos__link" href="#">HTML & CSS</a>
+            </li>
+            <li class="topicos__item">
+                <a class="topicos__link" href="#">Python</a>
+            </li>
+            <li class="topicos__item">
+                <a class="topicos__link" href="#">OO</a>
+            </li>
+            <li class="topicos__item">
+                <a class="topicos__link" href="#">Java</a>
+            </li>
+        </ul>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
+</body>
+</html>
